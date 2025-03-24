@@ -1,0 +1,49 @@
+{
+  "name": "crop-disease-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@progress/kendo-data-query": "^1.7.1",
+    "@progress/kendo-licensing": "^1.5.1",
+    "@progress/kendo-popup-common": "^1.9.2",
+    "@progress/kendo-react-buttons": "^10.0.0",
+    "@progress/kendo-react-dateinputs": "^10.0.0",
+    "@progress/kendo-react-dropdowns": "^10.0.0",
+    "@progress/kendo-react-form": "^10.0.0",
+    "@progress/kendo-react-grid": "^10.0.0",
+    "@progress/kendo-react-indicators": "^10.0.0",
+    "@progress/kendo-react-inputs": "^10.0.0",
+    "@progress/kendo-react-intl": "^10.0.0",
+    "@progress/kendo-react-labels": "^10.0.0",
+    "@progress/kendo-react-layout": "^10.0.0",
+    "@progress/kendo-react-notification": "^10.0.0",
+    "@progress/kendo-react-popup": "^10.0.0",
+    "@progress/kendo-react-progressbars": "^10.0.0",
+    "@progress/kendo-svg-icons": "^4.0.0",
+    "@progress/kendo-theme-default": "^10.3.1",
+    "@tensorflow/tfjs": "^4.22.0",
+    "axios": "^1.8.4",
+    "openai": "^4.89.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "vite": "^6.2.0"
+  }
+}

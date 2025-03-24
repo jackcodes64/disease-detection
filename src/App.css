@@ -1,0 +1,325 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+/* Farmers' Stethoscope Title */
+.sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #32a852;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2d3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  height: 100vh; /* Full height of the viewport */
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: fixed; /* Fix it to the left */
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><polygon points="12,8 6,16 18,16"/></svg>') no-repeat center;
+}
+.sidebar::-webkit-scrollbar-button:single-button:vertical:increment {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><polygon points="6,8 18,8 12,16"/></svg>') no-repeat center;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 12px; /* Slim scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #7e7676; /* Track background */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #59cc24; /* Scrollbar color */
+  border-radius: 0px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #5caf2c; /* Darker when hovered */
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-menu {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.sub-menu li {
+  padding: 8px;
+  font-size: 0.9rem;
+  color: #358b40;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #1e2a38;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  background-color: #358b40;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+/* kendo theme */
+:root {
+  --kendo-theme-primary: #ff9800; /* Customize primary color */
+  --kendo-theme-border-radius: 6px; /* Slight rounding */
+}
+
+.dark-mode {
+  --kendo-color-text: darkblue;
+  --kendo-color-background: #121212;
+  --kendo-color-border: #333;
+  --kendo-color-primary: #bb86fc;
+}
+
+.k-progressbar {
+  height: 20px !important;
+}
+
+/* Active Section */
+section {
+  background-color: #aab9b8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  overflow-y: auto;
+}
+.diagnosis-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.diagnosis-card {
+  width: 90%;
+  max-width: 800px; /* I'll have to make this responsive */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  text-align: center;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  border: 2px ridge #fff;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.upload-box:hover {
+  background-color: #479c3f;
+}
+
+.hidden {
+  display: none;
+}
+
+.diagnosis-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.result-box {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profileh2 {
+  margin-bottom: 15px;
+  color: #4CAF50;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.k-input,
+.k-dropdownlist {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.k-dropdown {
+  width: 100%;
+  max-width: 400px; 
+  list-style: none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.k-dropdown .k-items {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.k-dropdown .k-list {
+  border-radius: 8px;
+  background: rgb(173, 223, 117);
+}
+
+.k-dropdown .k-item {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.k-dropdown .k-item:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+
+.market-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.marketh2 {
+  margin-bottom: 15px;
+  color: #4CAF50;
+}
+
+.marketh3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.ai-insight {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f3f3f3;
+  border-left: 5px solid #4caf50;
+  font-style: italic;
+}
+
+.k-grid tr {
+  border-bottom: 1px solid #ddd;
+}
+.k-grid td {
+  border-right: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
